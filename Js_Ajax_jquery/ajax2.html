@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <div>
+        <h1>The XMLHttpRequest Object</h1>
+        <button onclick="load()">Get my CD collection</button>
+    </div>
+
+    <table id="newtext" border="1" border-collapse>
+
+    </table>
+
+
+    <script>
+        function load() {
+            let tx = new XMLHttpRequest();
+
+            tx.onreadystatechange = () => {
+                if (tx.status == 200 && tx.readyState == 4)
+                
+
+                var table = "<tr><th>Artist</th><th>Title</th></tr>";
+                var x = tx.responseXML.getElementsByTagName("CD");
+                for (i = 0; i < x.length; i++) {
+                    table += "<tr><td>" +
+                        x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                        "</td><td>" +
+                        x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                        "</td></tr>";
+                }
+                document.getElementById("newtext").innerHTML = table;
+            };
+
+            tx.open("GET", "./table.xml", true);
+            tx.send();
+        }
+    </script>
+</body>
+
+</html>

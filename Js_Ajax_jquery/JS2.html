@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+<body>
+    <form action="#" style="text-align: center;">
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <input type="number" name="age" placeholder="Age"> <br><br>
+        <input type="number" name="yrpass" placeholder="Year Of Passing"> <br><br>
+        <input type="text" name="clname" placeholder="Collage Name"> <br><br>
+        <button onclick="show()">Submit</button>
+
+    </form>
+
+
+    <script>
+        function show(){
+            alert("Name : "+document.getElementsByName("name")[0].value+"\nAge : "+document.getElementsByName("age")[0].value+"\nYear Of Passing : "+document.getElementsByName("yrpass")[0].value
+            +"\nCollage Name : "+document.getElementsByName("clname")[0].value);
+        }
+    </script>
+</body>
+</html>

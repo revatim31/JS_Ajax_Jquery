@@ -1,0 +1,8 @@
+<h1>Declaring variables</h1>
+<p>You can declare a variable in two ways:</p>
+<ul>
+<li>With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables, depending on the execution context.</li>
+<li>With the keyword const or let. For example, let y = 13. This syntax can be used to declare a block-scope local variable. (See Variable scope below.)</li>
+<p>You can declare variables to unpack values from Object Literals using the Destructuring Assignment syntax. For example, let { bar } = foo. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object foo.</p>
+
+<p>You can also assign a value to a variable For example, x = 42. This form creates an undeclared global variable. It also generates a strict JavaScript warning. Undeclared global variables can often lead to unexpected behavior. Thus, it is discouraged to use undeclared global variables. </p>
