@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background-color: aqua;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.main h3{
+    font-size: 24px;  
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.main h3:nth-child(2){
+    color: rgb(231, 231, 80);  
+}
+
+.main h3:nth-child(3){
+    color: rgb(91, 212, 111);  
+}
+
+.main h3:nth-child(4){
+    color: rgb(65, 106, 194);  
+}
+
+.add{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.add input{
+    width: 91%;
+    border: 2px solid rgba(33, 89, 211,0.6);
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 7px 2px;
+}
+
+.add button{
+    width: 8%;
+    height: 43px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.list{
+    width: 80%;
+    margin: 10px auto;
+    max-height: 500px;
+    overflow-y:auto;
+    /* -webkit-b */
+}
+
+.container li{
+    width: 98%;
+    border: 1.5px solid rgb(73, 69, 69);
+    border-radius: 5px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(90, 240, 240);
+    display: flex;
+    margin: 20px 0;
+}
+
+.container li div:nth-child(1){
+    width: 95%;
+    padding: 0 5px;
+}
+
+.container li div:nth-child(2){
+    font-size: 30px;
+    color: rgb(73, 69, 69);
+    cursor: pointer;
+}

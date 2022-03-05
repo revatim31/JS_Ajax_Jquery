@@ -1,0 +1,12 @@
+<h1>Variable</h1>
+
+<p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+
+<p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0–9).</p>
+
+<p>Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) as well as "a" through "z" (lowercase).</p>
+
+<p>You can use most of ISO 8859-1 or Unicode letters such as å and ü in identifiers. (For more details, see this blog post.) You can also use the Unicode escape sequences as characters in identifiers.</p>
+
+<p>Some examples of legal names are Number_hits, temp99, $credit, and _name.</p>
+
